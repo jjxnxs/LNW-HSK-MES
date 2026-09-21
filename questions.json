@@ -1,0 +1,272 @@
+[
+  {
+    "q": "Welches Strahlbild wird beim Hohlstrahlrohr vor dem Innenangriff eingestellt?",
+    "a": [
+      "Grundsätzlich Sprühstrahl.",
+      "Das Sprühbild sollte entsprechend der zu erwartenden Lage eingestellt werden.",
+      "Immer Vollstrahl."
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Was bedeutet die Funkdisziplin im Einsatz?",
+    "a": [
+      "Funk nur durch Führungskräfte",
+      "Ständiges Mithören aller Gespräche",
+      "Ordnungsgemäße und situationsgerechte Nutzung des Funkkanals"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "Welche Durchflussmenge wird beim Hohlstrahlrohr vor dem Innenangriff eingestellt?",
+    "a": [
+      "Immer die niedrigste.",
+      "Grundsätzlich die mittlere Durchflussmenge.",
+      "Das Hohlstrahlrohr sollte bei unbekannter Brandintensität auf maximale Durchflussmenge eingestellt werden."
+    ],
+    "correct": 2
+  },
+  {
+    "q": "Welche Grundregel gilt für den Funkverkehr?",
+    "a": [
+      "Kurz, klar und eindeutig funken",
+      "Möglichst lange Funksprüche senden",
+      "Alle Informationen, auch unwichtige, sofort übermitteln"
+    ],
+    "correct": 0
+  },
+  {
+    "q": "Wodurch wird die Energiefreisetzungsrate im Moment des Vollbrandes bei einem Zimmerbrand bestimmt?",
+    "a": [
+      "Ausschließlich durch die Ventilationsbedingungen, da nur der zur Verfügung stehende Sauerstoff für die freigesetzte Energie verantwortlich ist.",
+      "Durch die Menge der Brandlast und die geometrische Anordnung im Raum.",
+      "Durch die insgesamt vorhandene Menge und Art des brennbaren Materials."
+    ],
+    "correct": 0
+  },
+  {
+    "q": "Welche Maßnahme ist nach einem Brandeinsatz im Innenangriff zwingend erforderlich?",
+    "a": [
+      "Sofortige Wiederverwendung der Schutzkleidung",
+      "Trocknen der Einsatzkleidung an der Luft",
+      "Gründliche Wäsche und Dekontamination der kompletten Einsatzkleidung"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "Der Flammpunkt gibt an",
+    "a": [
+      "bei welcher Temperatur ein fester Stoff brennt.",
+      "die niedrigste Temperatur bei der Rauchgase durchzünden.",
+      "die niedrigste Temperatur, bei der sich über einer Flüssigkeit ein zündfähiges Dampf-Luft-Gemisch bilden kann."
+    ],
+    "correct": 2
+  },
+  {
+    "q": "Welche Aussage zur Einsatzstellenhygiene ist korrekt?",
+    "a": [
+      "Sie ist nur bei großen Brandeinsätzen notwendig",
+      "Sie beginnt erst nach Verlassen der Einsatzstelle",
+      "Sie beginnt bereits während des Einsatzes"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "Das Öffnen der Wohnungstür einer Brandwohnung, in der ein Zimmer mit offener Tür brennt,",
+    "a": [
+      "kann durch die zusätzliche Luftzufuhr die Brandintensität erhöhen.",
+      "hat keinen Einfluss auf den Brand.",
+      "spielt nur eine Rolle, wenn bereits ein Fenster geplatzt ist."
+    ],
+    "correct": 0
+  },
+  {
+    "q": "Welche Gefahr entsteht besonders bei Brandeinsätzen durch kontaminierte Einsatzkleidung?",
+    "a": [
+      "Aufnahme krebserregender Stoffe über Haut und Atemwege",
+      "Erhöhter Wasserverbrauch",
+      "Mechanische Beschädigung der Kleidung"
+    ],
+    "correct": 0
+  },
+  {
+    "q": "Bei einem Wohnungsbrand besteht für die Bewohner die größte Überlebenswahrscheinlichkeit",
+    "a": [
+      "im Badezimmer.",
+      "in einem Raum mit offener Tür.",
+      "in einem Raum mit geschlossener Tür."
+    ],
+    "correct": 2
+  },
+  {
+    "q": "Was ist das Hauptziel der Einsatzstellenhygiene?",
+    "a": [
+      "Die optische Sauberkeit der Einsatzstelle",
+      "Der Schutz der Einsatzkräfte vor gesundheitsschädlichen Stoffen",
+      "Die Einhaltung von Dokumentationspflichten"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "In welcher Reihenfolge soll gemäß Fachempfehlung „Brandbekämpfung zur Menschenrettung“ eine Brandwohnung nach Bewohnern durchsucht werden?",
+    "a": [
+      "Die Reihenfolge spielt keine Rolle, Hauptsache alle Räume werden durchsucht.",
+      "Zuerst den Brandraum, dann die Räume mit offener Tür, da hier die Überlebenswahrscheinlichkeiten am geringsten sind, dann die Räume mit geschlossener Tür.",
+      "Zuerst alle Räume mit geschlossener Tür, da hier die Überlebenswahrscheinlichkeit am höchsten ist."
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Welche Maßnahme reduziert die Schadstoffbelastung bereits an der Einsatzstelle?",
+    "a": [
+      "Ablegen der kontaminierten Kleidung im Mannschaftsraum",
+      "Lüften des Fahrzeuginnenraums",
+      "Grobreinigung und Verpackung kontaminierter Ausrüstung"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "Bei einem Verkehrsunfall dürfen Feuerwehrleute",
+    "a": [
+      "den Verkehr regeln.",
+      "nicht die Straße sperren, da das Polizeiaufgabe ist.",
+      "die Straße sperren."
+    ],
+    "correct": 2
+  },
+  {
+    "q": "Welche Kombination ist beim Einsatz eines Rauchverschlusses taktisch sinnvoll?",
+    "a": [
+      "Rauchverschluss und vollständiges Öffnen aller Türen",
+      "Rauchverschluss und taktische Ventilation",
+      "Rauchverschluss und vollständiges Öffnen aller Fenster und Türen"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Bei einer Alarmierung dürfen Feuerwehrleute ausrücken,",
+    "a": [
+      "die Alkohol getrunken haben, sich aber noch fit fühlen.",
+      "die ohne körperliche oder geistige Einschränkung fit sind.",
+      "die krankgeschrieben sind, sich aber fit für den Einsatz fühlen."
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Ein Rauchverschluss wird im Treppenraum an einer Wohnungstür gesetzt. Beim Öffnen der Tür kann…",
+    "a": [
+      "trotz des Rauchverschlusses z. B. durch Windeinfluss der gesamte Treppenraum verrauchen.",
+      "kein Rauch in den Treppenraum eindringen.",
+      "kein Sauerstoff zum Brandherd gelangen."
+    ],
+    "correct": 0
+  },
+  {
+    "q": "Der Gerätesatz Absturzsicherung darf bei einer Menschenrettung",
+    "a": [
+      "von jedem Feuerwehrmann mit Grundausbildung eingesetzt werden.",
+      "auf Befehl des Gruppenführers von jedem Feuerwehrmann eingesetzt werden.",
+      "nur von speziell ausgebildetem Personal eingesetzt werden."
+    ],
+    "correct": 2
+  },
+  {
+    "q": "Wo kann der Rauchverschluss eingesetzt werden?",
+    "a": [
+      "Nur an der Haustür",
+      "Nur an der Wohnungstür",
+      "An der Haustür, der Wohnungstür und der Brandraumtür"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "Gemäß FwDV 3 „Einheiten im Löscheinsatz“ verlegt der Schlauchtrupp Schlauchleitungen für den Angriffstrupp",
+    "a": [
+      "vom Verteiler zum Trupp.",
+      "vom Hydranten zum Fahrzeug.",
+      "vom Trupp zum Verteiler."
+    ],
+    "correct": 2
+  },
+  {
+    "q": "Was ist der Hauptzweck eines Rauchverschlusses?",
+    "a": [
+      "Die Begrenzung der Rauchausbreitung in angrenzende Bereiche",
+      "Die vollständige Entrauchung eines Brandraums",
+      "Die Erhöhung der Sauerstoffzufuhr im Brandraum"
+    ],
+    "correct": 0
+  },
+  {
+    "q": "Durch die Sitzordnung im Fahrzeug ist die grundsätzliche Aufgabenverteilung im Einsatzfall zugewiesen. Beim Aufsitzen im Alarmfall ist…",
+    "a": [
+      "darauf zu achten, dass nur die Plätze eingenommen werden, deren zugewiesene Funktionen aufgrund des Ausbildungsstandes auch übernommen werden können.",
+      "egal, wer sich auf welchen Platz setzt.",
+      "bis auf Gruppenführer und Maschinist egal, wo man sich hinsetzt."
+    ],
+    "correct": 0
+  },
+  {
+    "q": "Wann ist der Einsatz eines Rauchverschlusses besonders sinnvoll?",
+    "a": [
+      "Während des Innenangriffs zum Schutz von Rettungs- und Angriffswegen",
+      "Nach Abschluss der Brandbekämpfung",
+      "Nur bei Kellerbränden"
+    ],
+    "correct": 0
+  },
+  {
+    "q": "Bei einer Schlauchreserve müssen grundsätzlich",
+    "a": [
+      "3 Buchten gelegt werden.",
+      "mindestens 1 Schlauchlänge gelegt werden.",
+      "so viele Längen gelegt werden, dass der vorgehende Trupp die notwendige Reichweite und Eindringtiefe erhält."
+    ],
+    "correct": 2
+  },
+  {
+    "q": "Was ist das primäre Ziel der taktischen Ventilation im Brandeinsatz?",
+    "a": [
+      "Die Beschleunigung der Brandbekämpfung durch Sauerstoffzufuhr",
+      "Die vollständige Entrauchung des Gebäudes vor dem Innenangriff",
+      "Die gezielte Kontrolle und Leitung von Rauch, Hitze und Brandgasen"
+    ],
+    "correct": 2
+  },
+  {
+    "q": "Die für die Feuerwehren gültige Unfallverhütungsvorschrift (UVV) gilt",
+    "a": [
+      "nur bei Übungen und in der Ausbildung.",
+      "bei Übungen, Ausbildung und im Einsatz.",
+      "nur für Einsätze."
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Welche Aussage zur Ventilation mit Lüftern ist korrekt?",
+    "a": [
+      "Lüfter können unabhängig vom Brandverlauf eingesetzt werden",
+      "Lüfter dürfen auch im Innenbereich eingesetzt werden",
+      "Lüfter dürfen nur im Außenbereich verwendet werden"
+    ],
+    "correct": 1
+  },
+  {
+    "q": "Nachdem der Schlauchtrupp nach FwDV 3 die Leitungen für den Angriffs- und Wassertrupp verlegt hat…",
+    "a": [
+      "bedient er den Verteiler.",
+      "meldet er sich beim Gruppenführer.",
+      "nimmt er automatisch das nächste Rohr vor."
+    ],
+    "correct": 0
+  },
+  {
+    "q": "Welche Maßnahme erhöht die Sicherheit der Einsatzkräfte bei taktischer Ventilation?",
+    "a": [
+      "Kontinuierliche Lagebeurteilung und Kommunikation",
+      "Schnelles Öffnen großer Öffnungen",
+      "Einsatz möglichst vieler Lüfter"
+    ],
+    "correct": 0
+  }
+]

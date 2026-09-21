@@ -3,26 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Feuerwehr-Quiz (NRW) – 30s Timer</title>
-  <style>
-    :root{--bg:#0f172a;--card:#111827;--muted:#94a3b8;--text:#e5e7eb;--accent:#f59e0b;--ok:#16a34a;--bad:#ef4444;--btn:#1f2937;--btn2:#0ea5e9}
-    *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Noto Sans','Helvetica Neue',Arial,'Apple Color Emoji','Segoe UI Emoji';background:radial-gradient(1200px 600px at 80% -20%,#1e293b 35%,var(--bg) 70%) no-repeat,var(--bg);color:var(--text);line-height:1.5}
-    .wrap{max-width:920px;margin:clamp(12px,5vw,40px) auto;padding:0 14px}header{display:flex;gap:16px;align-items:center;justify-content:space-between;margin-bottom:18px}
-    .brand{display:flex;gap:12px;align-items:center}.logo{width:40px;height:40px;border-radius:10px;background:conic-gradient(from 180deg at 50% 50%,#ef4444,#f59e0b,#f97316,#ef4444);box-shadow:0 0 0 2px #000 inset,0 10px 30px #0008}
-    .title{font-weight:700;font-size:clamp(18px,3.2vw,26px)}.card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));border:1px solid #ffffff12;border-radius:18px;box-shadow:0 10px 30px #0008;padding:clamp(16px,3vw,28px)}
-    .muted{color:var(--muted)}button{cursor:pointer;border:none;background:var(--btn);color:var(--text);padding:12px 16px;border-radius:12px;font-size:16px;transition:transform .06s ease,background .2s ease,opacity .2s ease;box-shadow:0 6px 16px #0006}
-    button:hover{transform:translateY(-1px)}button:disabled{opacity:.6;cursor:not-allowed}.primary{background:linear-gradient(180deg,var(--btn2),#0284c7)}
-    .grid{display:grid;gap:12px}.answers{margin-top:14px}.answer-btn{text-align:left;border:1px solid #ffffff20;background:#0b1220;display:flex;gap:10px;align-items:flex-start}
-    .answer-btn .label{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;background:#111827;border:1px solid #ffffff16;color:#cbd5e1;flex:0 0 auto;margin-top:2px;font-weight:700}
-    .answer-btn.correct{border-color:#065f46;background:#052e1b}.answer-btn.wrong{border-color:#7f1d1d;background:#2a1010}
-    .answer-btn.correct .label{background:#065f46;color:#ecfdf5;border-color:transparent}.answer-btn.wrong .label{background:#7f1d1d;color:#fee2e2;border-color:transparent}
-    .feedback{margin-top:12px;padding:12px;border-radius:12px;border:1px dashed #ffffff24;display:none}.feedback.show{display:block}.feedback.ok{background:#052e1b;border-color:#065f46;color:#86efac}.feedback.bad{background:#2a1010;border-color:#7f1d1d;color:#fecaca}
-    .row{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}.pill{font-size:14px;padding:6px 10px;border-radius:999px;border:1px solid #ffffff18;background:#0b1220;color:#cbd5e1}
-    .timer{position:relative;height:12px;border-radius:999px;background:#0b1220;border:1px solid #ffffff15;overflow:hidden}.timer>.bar{position:absolute;inset:0 auto 0 0;width:100%;background:linear-gradient(90deg,#16a34a,#f59e0b,#ef4444);transform-origin:left center;transform:scaleX(1)}
-    .question{font-size:clamp(18px,2.8vw,22px);font-weight:700;margin:6px 0 4px 0}.progress{font-size:14px}.hidden{display:none!important}
-    table{width:100%;border-collapse:collapse;margin-top:10px;font-size:14px}th,td{padding:8px 10px;border-bottom:1px solid #ffffff14;vertical-align:top}tr.correct-row{background:#052e1b}tr.wrong-row{background:#2a1010}
-    .tag-ok{color:#10b981}.tag-bad{color:#f87171}@media (max-width:640px){.answers button{padding:12px}.answer-btn .label{width:26px;height:26px;border-radius:7px}.title{font-size:20px}}
-  </style>
+  <title>Leistungsnachweis – 30s Timer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="wrap">
@@ -30,7 +12,7 @@
       <div class="brand">
         <div class="logo" aria-hidden="true"></div>
         <div>
-          <div class="title">Feuerwehr-Quiz (NRW)</div>
+          <div class="title">Leistungsnachweis</div>
           <div class="muted" style="font-size:13px">30&nbsp;Sekunden pro Frage • Direktes Feedback • Ergebnisliste am Ende</div>
         </div>
       </div>
@@ -86,56 +68,5 @@
     </section>
   </div>
 
-<script>
-const QUESTIONS=[
-{q:"Welches Strahlbild wird beim Hohlstrahlrohr vor dem Innenangriff eingestellt?",a:["Grundsätzlich Sprühstrahl.","Das Sprühbild sollte entsprechend der zu erwartenden Lage eingestellt werden.","Immer Vollstrahl."],correct:1},
-{q:"Welche Durchflussmenge wird beim Hohlstrahlrohr vor dem Innenangriff eingestellt?",a:["Das Hohlstrahlrohr sollte bei unbekannter Brandintensität auf maximale Durchflussmenge eingestellt werden.","Grundsätzlich die mittlere Durchflussmenge.","Immer die niedrigste."],correct:0},
-{q:"Wodurch wird die Energiefreisetzungsrate im Moment des Vollbrandes bei einem Zimmerbrand bestimmt?",a:["Durch die Menge der Brandlast und die geometrische Anordnung im Raum.","Ausschließlich durch die Ventilationsbedingungen, da nur der zur Verfügung stehende Sauerstoff für die freigesetzte Energie verantwortlich ist.","Durch die insgesamt vorhandene Menge und Art des brennbaren Materials."],correct:1},
-{q:"Der Flammpunkt gibt an …",a:["bei welcher Temperatur ein fester Stoff brennt.","die niedrigste Temperatur, bei der sich über einer Flüssigkeit ein zündfähiges Dampf‑Luft‑Gemisch bilden kann.","die niedrigste Temperatur bei der Rauchgase durchzünden."],correct:1},
-{q:"Das Öffnen der Wohnungstür einer Brandwohnung, in der ein Zimmer mit offener Tür brennt …",a:["hat keinen Einfluss auf den Brand.","spielt nur eine Rolle, wenn bereits ein Fenster geplatzt ist.","kann durch die zusätzliche Luftzufuhr die Brandintensität erhöhen."],correct:2},
-{q:"Bei einem Wohnungsbrand besteht für die Bewohner die größte Überlebenswahrscheinlichkeit …",a:["in einem Raum mit geschlossener Tür.","in einem Raum mit offener Tür.","im Badezimmer."],correct:0},
-{q:"In welcher Reihenfolge soll gemäß Fachempfehlung Brandbekämpfung zur Menschenrettung eine Brandwohnung nach Bewohnern durchsucht werden?",a:["Die Reihenfolge spielt keine Rolle, Hauptsache alle Räume werden durchsucht.","Zuerst alle Räume mit geschlossener Tür, da hier die Überlebenswahrscheinlichkeit am höchsten ist.","Zuerst den Brandraum, dann die Räume mit offener Tür (geringste Überlebenschancen), dann die Räume mit geschlossener Tür."],correct:2},
-{q:"Bei einem Verkehrsunfall dürfen Feuerwehrleute …",a:["den Verkehr regeln.","die Straße sperren.","nicht die Straße sperren, da das Polizeiaufgabe ist."],correct:1},
-{q:"Bei einer Alarmierung dürfen Feuerwehrleute ausrücken, …",a:["die Alkohol getrunken haben, sich aber noch fit fühlen.","die ohne körperliche oder geistige Einschränkung fit sind.","die krankgeschrieben sind, sich aber fit für den Einsatz fühlen."],correct:1},
-{q:"Der Gerätesatz Absturzsicherung darf bei einer Menschenrettung …",a:["von jedem Feuerwehrmann mit Grundausbildung eingesetzt werden.","auf Befehl des Gruppenführers von jedem Feuerwehrmann eingesetzt werden.","nur von speziell ausgebildetem Personal eingesetzt werden."],correct:2},
-{q:"Gemäß FwDV 3 „Einheiten im Löscheinsatz“ verlegt der Schlauchtrupp Schlauchleitungen für den Angriffstrupp …",a:["vom Trupp zum Verteiler.","vom Hydranten zum Fahrzeug.","vom Verteiler zum Trupp."],correct:0},
-{q:"Durch die Sitzordnung im Fahrzeug ist die grundsätzliche Aufgabenverteilung im Einsatzfall vorgegeben. Beim Aufsitzen im Alarmfall ist …",a:["egal, wer sich auf welchen Platz setzt.","darauf zu achten, dass nur Plätze eingenommen werden, deren zugewiesene Funktionen entsprechend dem Ausbildungsstand übernommen werden können.","durch den Gruppenführer und Maschinist egal, wo man sich hinsetzt."],correct:1},
-{q:"Bei einer Schlauchreserve müssen grundsätzlich …",a:["drei Buchten gelegt werden.","mindestens eine Schlauchlänge gelegt werden.","so viele Längen gelegt werden, dass der vorgehende Trupp die notwendige Reichweite und Eindringtiefe erhält."],correct:2},
-{q:"Die für die Feuerwehren gültigen Unfallverhütungsvorschriften (UVV) gelten …",a:["bei Übungen, Ausbildung und im Einsatz.","nur für Einsätze.","nur bei Übungen und in der Ausbildung."],correct:0},
-{q:"Nachdem der Schlauchtrupp nach FwDV 3 die Leitungen für den Angriffs‑ und Wassertrupp verlegt hat …",a:["meldet er sich beim Gruppenführer.","bedient er den Verteiler.","nimmt er automatisch das nächste Rohr vor."],correct:1},
-{q:"Ein Gebäude droht einzustürzen. Wie groß ist der Trümmerschatten?",a:["1,5‑fache Gebäudehöhe.","2‑fache Gebäudehöhe.","1‑fache Gebäudehöhe."],correct:0},
-{q:"Ein X vor der Gefahrnummer auf einer orangen Warntafel eines Tanklastwagens bedeutet …",a:["dass die Ladung brennbar ist.","dass die Ladung besonders giftig ist.","dass die Ladung mit Wasser gefährlich reagiert."],correct:2},
-{q:"Ein 5‑kg‑Kohlendioxidlöscher ist zugelassen für die Brandklasse …",a:["A, feste glutbildende Stoffe.","F, Speiseöle.","B, flüssige und flüssig werdende Stoffe."],correct:2},
-{q:"Wenn eine Einsatzkraft eine besondere Gefahr (z. B. Einsturz/Explosion) bemerkt und Rückzug sofort notwendig ist, gibt sie nach FwDV 3 das Kommando …",a:["„Vorsicht Gefahr!“","„Gefahr – Alle sofort zurück!“","„Schnell weg!“"],correct:1},
-{q:"Der Angriffstrupp steigt über eine Multifunktionsleiter durch ein Fenster in eine Brandwohnung (1. OG) ein. Nach FwDV 10 darf er die Angriffsleitung …",a:["über die Leiter verlegen und mit einem Schlauchhalter an der Leiter befestigen.","über die Leiter verlegen, sofern nicht an ihr befestigen.","nicht auf der Leiter verlegen oder an der Leiter befestigen."],correct:2},
-{q:"Eine tragbare Leiter wird an ein Fenster im 2. Obergeschoss angelegt, reicht aber nur bis zur Unterkante des Fensters und hat keinen Überstand.",a:["Wenn Festhalten z. B. an der Fensterlaibung möglich ist, darf über den Leiterkopf durch das Fenster eingestiegen werden.","Die Leiter darf zwar bestiegen, aber nicht überstiegen werden.","Die Leiter darf grundsätzlich nicht bestiegen werden."],correct:0},
-{q:"In einem brennenden Wohnmobil befindet sich eine 11‑kg‑Propangasflasche, die über das Druckentlastungsventil mit deutlich sichtbarer Flamme abbläst.",a:["Die Flasche könnte explodieren, da sich eine explosionsfähige Atmosphäre bilden kann.","Es kann jederzeit und ohne Vorwarnung zum Druckgefäßzerknall kommen.","Die Flasche kann nicht explodieren, da der Druck abgeblasen werden kann."],correct:1},
-{q:"Atemgifte in Form von Gasen oder Stäuben …",a:["können nur über Mund und Nase in den Körper eindringen und schädigen.","stellen keine Gefahr dar, wenn umluftunabhängiger Atemschutz getragen wird.","können über Mund, Nase und die Haut in den Körper eindringen und schädigen."],correct:2},
-{q:"Bei einem Verkehrsunfall soll die Batterie an einem herkömmlichen Fahrzeug mit Verbrennungsmotor abgeklemmt werden. Welchen Pol klemmst du zuerst ab?",a:["Den Minuspol.","Den Pluspol.","Die Reihenfolge ist egal."],correct:0},
-{q:"Nach einem dramatisch verlaufenen Einsatz, der Einsatzkräfte psychisch belastet, …",a:["sollte man eine Einsatznachbesprechung durchführen und ggf. ein PSU/PSNV‑Team hinzuziehen.","sollte man möglichst schnell zur Tagesordnung übergehen und so tun, als wäre alles in Ordnung.","sollte man anderen gegenüber keine Schwäche zeigen."],correct:0},
-{q:"Bei einem Verkehrsunfall läuft Flüssigkeit aus einem Gefahrguttransporter aus. Wo liegt bei unbekanntem Gefahrstoff die Absperrgrenze?",a:["Wenn man nichts riecht oder nicht mit der Flüssigkeit in Berührung kommt, muss nicht abgesperrt werden.","Mindestens bei 50 m.","Zwischen 5 und 100 m – je nach Weisung des Gruppenführers."],correct:1},
-{q:"Bei einem Verkehrsunfall soll mit Hilfe einer Seilwinde ein PKW aus dem Graben gezogen werden. Eine eingesetzte lose Rolle …",a:["halbiert die am PKW wirkende Zugkraft.","hat keinen Einfluss auf die am PKW wirkende Zugkraft.","verdoppelt die am PKW wirkende Zugkraft."],correct:2},
-{q:"Welche Aufgabe hat der Angriffstrupp nach FwDV 3 in der technischen Hilfeleistung?",a:["Er stellt den Brandschutz sicher.","Er führt die technische Rettung durch.","Er sichert vorrangig die Unfallstelle ab."],correct:1},
-{q:"Die Feuerwehr rettet eine Person aus akuter Lebensgefahr. Dies ist eine …",a:["freiwillige kostenlose Leistung der Feuerwehr.","kostenlose Pflichtaufgabe der Feuerwehr.","freiwillige, aber kostenpflichtige Leistung der Feuerwehr."],correct:1},
-{q:"Bei Stromerzeugern der Feuerwehr dürfen …",a:["150 m Leitung hintereinander geschaltet werden.","beliebig viele Leitungen hintereinander geschaltet werden, wenn der Einsatz das erfordert.","max. 100 m Leitung hintereinander geschaltet werden."],correct:2}
-];
-const el=s=>document.querySelector(s),els=s=>Array.from(document.querySelectorAll(s));
-let order=[...QUESTIONS.keys()],idx=0,score=0,answersGiven=[],timer=null,remaining=30,totalSeconds=0;
-function formatSeconds(s){const m=Math.floor(s/60),sec=s%60;return (m>0?m+" min ":"")+sec+" s"}
-function startQuiz(){idx=0;score=0;answersGiven=[];totalSeconds=0;el("#screenStart").classList.add("hidden");el("#screenResults").classList.add("hidden");el("#screenQuiz").classList.remove("hidden");el("#btnRestartTop").classList.remove("hidden");showQuestion()}
-function shuffleOrder(){for(let i=order.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]]}}
-function setTimer(seconds){remaining=seconds;el("#timeLeft").textContent=remaining;const bar=el("#timeBar");bar.style.transform="scaleX(1)";const startTs=performance.now();clearInterval(timer);timer=setInterval(()=>{const elapsed=Math.floor((performance.now()-startTs)/1000);const left=Math.max(0,seconds-elapsed);if(left!==remaining){remaining=left;el("#timeLeft").textContent=remaining;const ratio=Math.max(.001,remaining/seconds);bar.style.transform=`scaleX(${ratio})`}if(remaining<=0){clearInterval(timer);lockQuestion(null)}},100)}
-function showQuestion(){const qIndex=order[idx],q=QUESTIONS[qIndex];el("#progress").textContent=`Frage ${idx+1} von ${QUESTIONS.length}`;el("#questionText").textContent=q.q;el("#questionSub").style.display="none";el("#feedback").className="feedback";const list=el("#answerList");list.innerHTML="";["a","b","c","d"].forEach((lab,i)=>{if(i>=q.a.length)return;const btn=document.createElement("button");btn.className="answer-btn";btn.dataset.index=i;btn.innerHTML=`<span class="label">${String.fromCharCode(97+i)}</span><div>${q.a[i]}</div>`;btn.addEventListener("click",()=>lockQuestion(i));list.appendChild(btn)});el("#btnNext").disabled=true;setTimer(30)}
-function lockQuestion(pickedIndex){clearInterval(timer);const qIndex=order[idx],q=QUESTIONS[qIndex];const listBtns=els("#answerList .answer-btn");listBtns.forEach(b=>b.disabled=true);listBtns.forEach((b,i)=>{if(i===q.correct)b.classList.add("correct");if(pickedIndex!==null&&i===pickedIndex&&i!==q.correct)b.classList.add("wrong")});const isCorrect=pickedIndex===q.correct;if(isCorrect)score++;const fb=el("#feedback");fb.classList.add("show",isCorrect?"ok":"bad");fb.innerHTML=isCorrect?"✅ Richtig!":`❌ Falsch. Richtig ist: <b>${String.fromCharCode(97+q.correct)})</b> ${q.a[q.correct]}`;el("#btnNext").disabled=false;answersGiven.push({correct:isCorrect,picked:pickedIndex,correctIndex:q.correct,qIndex,time:30-remaining});totalSeconds+=30-remaining}
-function nextQuestion(){if(idx<QUESTIONS.length-1){idx++;showQuestion()}else{showResults()}}
-function showResults(){el("#screenQuiz").classList.add("hidden");el("#screenResults").classList.remove("hidden");el("#scoreText").textContent=`Du hast ${score} von ${QUESTIONS.length} Fragen richtig beantwortet (${Math.round(score/QUESTIONS.length*100)} %).`;el("#timeTotal").textContent=`Bearbeitungszeit (ohne Wartezeit): ${formatSeconds(totalSeconds)}.`;const tbody=el("#tableResults tbody");tbody.innerHTML="";answersGiven.forEach((ans,i)=>{const q=QUESTIONS[order[i]];const tr=document.createElement("tr");tr.className=ans.correct?"correct-row":"wrong-row";const your=ans.picked===null?"—":`${String.fromCharCode(97+ans.picked)}) ${q.a[ans.picked]}`;const right=`${String.fromCharCode(97+ans.correctIndex)}) ${q.a[ans.correctIndex]}`;tr.innerHTML=`<td>${i+1}</td><td>${q.q}</td><td>${your}</td><td>${right}</td><td>${ans.correct?'<span class="tag-ok">richtig</span>':'<span class="tag-bad">falsch</span>'}</td>`;tbody.appendChild(tr)})}
-function restart(){order=[...QUESTIONS.keys()];startQuiz()}
-el("#btnStart").addEventListener("click",startQuiz);
-el("#btnShuffle").addEventListener("click",()=>{shuffleOrder();el("#btnShuffle").textContent="Reihenfolge gemischt ✓"});
-el("#btnNext").addEventListener("click",nextQuestion);
-el("#btnRestart").addEventListener("click",restart);
-el("#btnRestartTop").addEventListener("click",restart);
-el("#btnRestartBottom").addEventListener("click",restart);
-window.addEventListener("keydown",(ev)=>{if(!el("#screenQuiz")||el("#screenQuiz").classList.contains("hidden"))return;const map={"1":0,"2":1,"3":2,"a":0,"b":1,"c":2};if(map.hasOwnProperty(ev.key)){const btn=el(`#answerList .answer-btn:nth-child(${map[ev.key]+1})`);if(btn&&!btn.disabled)btn.click()}if(ev.key==="Enter"&&!el("#btnNext").disabled)nextQuestion()});
-</script>
+<script src="script.js"></script>
 </body></html>
